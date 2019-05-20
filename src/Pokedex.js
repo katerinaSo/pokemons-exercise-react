@@ -12,34 +12,35 @@ export class Pokedex extends Component {
     const genIndex = () => {
       return Math.floor(Math.random() * arrIds.length);
     };
+    let cardOneId=arrIds[genIndex()]
+    let cardTwoId=arrIds[genIndex()]
+    let cardThreeId=arrIds[genIndex()]
+    let cardFourId=arrIds[genIndex()]
+    let cardFiveId=arrIds[genIndex()]
+    let cardSixId=arrIds[genIndex()]
+  
     return (
       <div>
         <div className="Pokedex-hand">
-          <Card
-            newID={arrIds[genIndex()]}
-            newData={pokemons[arrIds[genIndex()]]}
+          <Card newID={cardOneId}
+          newData={pokemons[cardOneId]}
           />
-          <Card
-            newID={arrIds[genIndex()]}
-            newData={pokemons[arrIds[genIndex()]]}
+          <Card newID={cardTwoId}
+          newData={pokemons[arrIds[cardTwoId]]}
           />
-          <Card
-            newID={arrIds[genIndex()]}
-            newData={pokemons[arrIds[genIndex()]]}
+          <Card newID={ cardThreeId}
+          newData={pokemons[arrIds[cardThreeId]]}
           />
         </div>
         <div className="Pokedex-hand">
-          <Card
-            newID={arrIds[genIndex()]}
-            newData={pokemons[arrIds[genIndex()]]}
+          <Card newID={ cardFourId}
+          newData={pokemons[arrIds[cardFourId]]}
           />
-          <Card
-            newID={arrIds[genIndex()]}
-            newData={pokemons[arrIds[genIndex()]]}
+          <Card newID={cardFiveId}
+          newData={pokemons[arrIds[cardFiveId]]}
           />
-          <Card
-            newID={arrIds[genIndex()]}
-            newData={pokemons[arrIds[genIndex()]]}
+          <Card newID={ cardSixId}
+          newData={pokemons[arrIds[cardSixId]]}
           />
         </div>
       </div>

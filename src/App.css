@@ -1,16 +1,11 @@
 .Pokedex{
    
-    display:grid;
-    grid-template-rows: 50% 50%;
-    height:80vh;
-    justify-content: center;
-    grid-gap:2em;
 }
 
 .Pokedex-hand{
    
     display:grid;
-    grid-template-columns: minmax(min-content, 250px) minmax(min-content, 250px) minmax(min-content, 250px);
+    grid-template-columns: minmax(min-content, min-content) minmax(min-content, min-content) minmax(min-content, min-content);
     grid-gap:2em;
     margin-top:2em;
     justify-content: center;
@@ -20,12 +15,14 @@
 .Pokecard{
     
     text-align: center;
-    border:1px solid grey;
+    border:1px solid rgb(204, 200, 200);
+    box-shadow: 3px 5px  10px #ddd7d7;
     
     
 }
 .Pokecard-title{
     font-size:1.1rem;
+    color:rgb(71, 107, 62);
     
 }
 .Pokecard-img{

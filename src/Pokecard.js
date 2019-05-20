@@ -5,6 +5,7 @@ import "./App.css";
 export class Pokecard extends Component {
   render() {
     const { newID, newData } = this.props;
+    console.log(newData.name)
 
     return (
       <div className="Pokecard">
@@ -16,7 +17,7 @@ export class Pokecard extends Component {
             alt={`pokemon ${newData.name}`}
           />
         </p>
-        <p className="Pokecard-type">type: {newData.type}</p>
+        <p className="Pokecard-type">{newData.type}</p>
         <p className="Pokecard-power">power: {newData.attack+newData.defense}</p>
       </div>
     );
