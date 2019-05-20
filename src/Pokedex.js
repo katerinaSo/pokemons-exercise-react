@@ -10,7 +10,7 @@ export class Pokedex extends Component {
       return parseInt(id);
     });
     const genIndex = () => {
-      return Math.floor(Math.random() * arrIds.length);
+      return Math.floor(Math.random() * 25);
     };
     let cardOneId=arrIds[genIndex()]
     let cardTwoId=arrIds[genIndex()]
