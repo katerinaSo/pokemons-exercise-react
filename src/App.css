@@ -10,9 +10,10 @@
 .Pokedex-hand{
    
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(min-content, 250px) minmax(min-content, 250px) minmax(min-content, 250px);
     grid-gap:2em;
     margin-top:2em;
+    justify-content: center;
     
 }
 
@@ -24,11 +25,11 @@
     
 }
 .Pokecard-title{
-    font-size:1.3rem;
+    font-size:1.1rem;
     
 }
 .Pokecard-img{
-    height:9em;
+    height:10em;
 }
 .Pokecard-type{
     font-size:0.9rem;
