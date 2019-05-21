@@ -10,7 +10,7 @@ export class Pokedex extends Component {
       return parseInt(id);
     });
     const genIndex = () => {
-      return Math.floor(Math.random() * 100);
+      return Math.floor(Math.random() * arrIds.length);
     };
     let cardOneId=arrIds[genIndex()]
     let cardTwoId=arrIds[genIndex()]
@@ -26,21 +26,21 @@ export class Pokedex extends Component {
           newData={pokemons[cardOneId]}
           />
           <Card newID={cardTwoId}
-          newData={pokemons[arrIds[cardTwoId]]}
+          newData={pokemons[cardTwoId]}
           />
           <Card newID={ cardThreeId}
-          newData={pokemons[arrIds[cardThreeId]]}
+          newData={pokemons[cardThreeId]}
           />
         </div>
         <div className="Pokedex-hand">
           <Card newID={ cardFourId}
-          newData={pokemons[arrIds[cardFourId]]}
+          newData={pokemons[cardFourId]}
           />
           <Card newID={cardFiveId}
-          newData={pokemons[arrIds[cardFiveId]]}
+          newData={pokemons[cardFiveId]}
           />
           <Card newID={ cardSixId}
-          newData={pokemons[arrIds[cardSixId]]}
+          newData={pokemons[cardSixId]}
           />
         </div>
       </div>
